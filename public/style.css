@@ -1,0 +1,108 @@
+/* Style de base pour le corps de la page */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+  }
+  
+  /* Style pour l'en-tête principal de la page */
+  h1 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+  }
+  
+  /* Style pour les sous-titres */
+  h2 {
+    margin-top: 30px;
+    font-size: 16px;
+  }
+  
+  /* Style pour le formulaire d'ajout de carte Pokemon */
+  form[name="addPoke"], form[name="onePoke"] {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  form[name="addPoke"] label, form[name="onePoke"] label {
+    display: block;
+    font-size: 14px;
+  }
+  
+  form[name="addPoke"] input[type="text"], form[name="onePoke"] input[type="text"] {
+    width: 50%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+   
+  }
+  
+  form[name="addPoke"] button[type="submit"], form[name="onePoke"] button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Style pour la liste des cartes Pokemon */
+  table {
+    width: 100%;
+    margin-top: 30px;
+    border-collapse: collapse;
+  }
+  
+  thead {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  th, td {
+    text-align: left;
+    padding: 10px;
+  }
+  
+  th:first-child, td:first-child {
+    width: 30%;
+  }
+  
+  th:nth-child(2), td:nth-child(2) {
+    width: 20%;
+  }
+  
+  th:nth-child(3), td:nth-child(3) {
+    width: 30%;
+  }
+  
+  td:last-child {
+    width: 20%;
+    text-align: center;
+  }
+  
+  tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  /* Style pour la div qui contient les images de carte Pokemon */
+  #card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  
+  #card img {
+    width: 75px;
+    height: 40px;
+  }
+  
